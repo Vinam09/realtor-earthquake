@@ -1,0 +1,156 @@
+:root {
+  --blue: #0011bb;
+  --indigo: #6600cc;
+  --light-gray: #ededed;
+  --darker-gray: #777777;
+  --darkest-gray: #444444;
+  --black: #000000;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* Header --> */
+header {
+  align-items: center;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+header .logo img {
+  width: 75px;
+}
+
+header .title {
+  color: var(--darker-gray);
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+/* --> Header */
+
+
+/* Home --> */
+h1 {
+  text-align: center;
+}
+
+.profile {
+  color: var(--indigo);
+  text-decoration: underline;
+}
+
+
+a {
+  color: var(--blue);
+  font-weight: bold;
+  text-decoration: none;
+}
+a:visited {
+  color: var(--indigo)
+}
+
+.list-container{
+  display: flex;
+  justify-content: center;
+}
+
+.list-earthquakes {
+  border-collapse: collapse;
+}
+
+
+.list-earthquakes tr th {
+
+  color: var(--darkest-gray);
+  cursor: pointer;
+  height: 1.5rem;
+  min-width: 8rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.list-earthquakes tr th:after {
+  font-size: 0.6rem;
+  padding-right: 0.5rem;
+}
+
+.list-earthquakes tr td {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.list-earthquakes .primary {
+  text-align: left;
+}
+
+
+
+/* -->  Home */
+
+
+
+/* Profile --> */
+
+.container {
+  margin: auto;
+  max-width: 40vw;
+  margin-top: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 2rem;
+  
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 0;
+  
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2
+}
+
+.entry {
+  padding: 1rem;
+}
+
+.field.title {
+  
+  color: var(--darkest-gray);
+  font-weight: bold;
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.field.value {
+  width: 60%;
+  color: var(--darker-gray)
+}
+
+.avatar {
+  width: 10rem;
+  padding-left: 4rem;
+}
+
+/* --> Profile */
+
+@media only screen and (min-width: 1600px) {
+  .map {
+    margin-left: 10rem;
+  }
+}
